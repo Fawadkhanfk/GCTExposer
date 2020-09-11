@@ -51,7 +51,7 @@ def GCTExposer(domain,more):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i','--moreinfo',help="Show more info..",required=False,default=False,action="store_true")
+    parser.add_argument('-i','--moreinfo',help="Show more crt informations",required=False,default=False,action="store_true")
     parser.add_argument('-d','--domain',required=True,default="",help="Target, e.g: uber.com",action="store")
     args = parser.parse_args()
     if args.domain == "":
